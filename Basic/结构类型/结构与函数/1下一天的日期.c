@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdbool.h>
-//º¯Êı½ÓÊÕ½á¹¹ÊÇ½ÓÊÕµÄÖµ 
+//å‡½æ•°æ¥æ”¶ç»“æ„æ˜¯æ¥æ”¶çš„å€¼ 
 struct date{
 	int month;
 	int day;
@@ -16,7 +16,7 @@ int main(int argc,char const *argv[])
 	
 	printf("Enter today date(mm dd yyyy):");
 	scanf("%i %i %i",&today.month,&today.day,&today.year);
-	//ÏÈÈ¡³ÉÔ±±äÁ¿ È»ºóÔÙÈ¡µØÖ· 
+	//å…ˆå–æˆå‘˜å˜é‡ ç„¶åå†å–åœ°å€ 
 	if(today.day != numberOfDays(today))
 	{
 		tomorrow.day = today.day+1;

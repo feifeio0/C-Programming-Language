@@ -1,5 +1,5 @@
 #include<stdio.h>
-// ->表示指针所指的结构变量中的成员
+// ->琛ㄧず鎸囬拡鎵�鎸囩殑缁撴瀯鍙橀噺涓殑鎴愬憳
 struct date{
 	int month;
 	int day;

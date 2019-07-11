@@ -1,5 +1,5 @@
-//½á¹¹ÀàĞÍ 
-//½á¹¹Ò»°ã¶¼·ÅÔÚº¯ÊıÍâÃæ£¬ÕâÑù¿ÉÒÔ±»¶à¸öº¯ÊıÊ¹ÓÃ 
+//ç»“æ„ç±»å‹ 
+//ç»“æ„ä¸€èˆ¬éƒ½æ”¾åœ¨å‡½æ•°å¤–é¢ï¼Œè¿™æ ·å¯ä»¥è¢«å¤šä¸ªå‡½æ•°ä½¿ç”¨ 
 #include<stdio.h>
 
 struct date{
@@ -7,17 +7,17 @@ struct date{
 	int day;
 	int year;
 };
-//ÉùÃ÷½á¹¹ÀàĞÍ 
+//å£°æ˜ç»“æ„ç±»å‹ 
 int main(int argc,char const *argv[])
 {
 	/*struct date{
 		int month;
 		int day;
 		int year;
-	};//·ÖºÅ²»ÄÜÍü */ 
+	};//åˆ†å·ä¸èƒ½å¿˜ */ 
 	
 	struct date today;
-	//½á¹¹±äÁ¿ 
+	//ç»“æ„å˜é‡ 
 	today.month = 07;
 	today.day = 31;
 	today.day = 2014;

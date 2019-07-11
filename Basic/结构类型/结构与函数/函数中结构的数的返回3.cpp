@@ -26,9 +26,9 @@ int main(int argc,char const *argv[])
 struct point* getStruct(struct point *p)
 {
 	scanf("%d",&p->x);
-	//p所指的x 
+	//p鎵�鎸囩殑x 
 	scanf("%d",&p->y);
-	//p所指的y 
+	//p鎵�鎸囩殑y 
 	printf("%d,%d\n",p->x,p->y);
 	return p;
 }

@@ -1,6 +1,6 @@
 #include<stdio.h>
-//�����뺯���д���һ����ʱ�Ľṹ����
-//Ȼ�������ṹ���ظ������� 
+//在输入函数中创建一个临时的结构变量
+//然后把这个结构返回给调用者 
 struct point {
 	int x;
 	int y;

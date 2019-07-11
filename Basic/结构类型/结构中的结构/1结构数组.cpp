@@ -1,5 +1,5 @@
 #include<stdio.h>
-//结构数组
+//缁撴瀯鏁扮粍
 struct time{
 	int hour;
 	int minutes;

@@ -1,4 +1,4 @@
-½á¹¹ÖÐµÄ½á¹¹
+ç»“æž„ä¸­çš„ç»“æž„
  
 
 struct point {
@@ -11,8 +11,8 @@ struct rectangle{
 	struct point pt2;
 };
 
-struct rectangle  r»ò*rp»òrp = &r;
-¾Í¿ÉÒÔÓÐ 
+struct rectangle  ræˆ–*rpæˆ–rp = &r;
+å°±å¯ä»¥æœ‰ 
 r.pt1.x;
 rp->pt1.x;
 (r.pt1).x;

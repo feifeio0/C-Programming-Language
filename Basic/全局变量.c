@@ -2,12 +2,12 @@
 
 int f(void);
 
-int gALL = 12;//È«¾Ö±äÁ¿ 
+int gALL = 12;//å…¨å±€å˜é‡ 
 
 int main(int argc,char const *argv[])
 {
 	printf("in %s gALL=%d\n",__func__,gALL);
-	f();//__func__Êä³öµ±Ç°º¯ÊıµÄÃû×Ö 
+	f();//__func__è¾“å‡ºå½“å‰å‡½æ•°çš„åå­— 
 	printf("agn in %s gALL=%d\n",__func__,gALL);
 	return 0;
 } 
