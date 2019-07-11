@@ -1,18 +1,18 @@
 #include<stdio.h>
 
 typedef int length;
-//Ê¹length³ÉÎª int ÀàĞÍµÄ±ğÃû 
+//ä½¿lengthæˆä¸º int ç±»å‹çš„åˆ«å 
 
 rypedef char* Strings[10];
-//StringsÊÇ10¸ö×Ö·û´®µÄÊı×éµÄÀàĞÍ
+//Stringsæ˜¯10ä¸ªå­—ç¬¦ä¸²çš„æ•°ç»„çš„ç±»å‹
 
 typedef struct node{
 	int data;
 	struct node *next;
 }aNode;
-»ò
+æˆ–
 typedef struct node aNode;
-//ÕâÑùÓÃaNode¾Í¿ÉÒÔ´úÌæstruct node 
+//è¿™æ ·ç”¨aNodeå°±å¯ä»¥ä»£æ›¿struct node 
 
 
 

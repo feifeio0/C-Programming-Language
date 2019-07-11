@@ -10,7 +10,7 @@ const BLOCK_SIZE = 20;
 }Array; */
 
 Array array_create(int init_size)
-// ´´½¨Êı×é 
+// åˆ›å»ºæ•°ç»„ 
 {
 	Array a;
 	a.size = init_size;
@@ -24,32 +24,32 @@ Array* array_create(Array* a,int init_size)
 	a->size = init_size;
 	a->array = ...;
 	return a;
-} ´¦ÀíµÄºÜ¸´ÔÓ ²»½¨ÒéÊ¹ÓÃÕâÖÖ·½Ê½
+} å¤„ç†çš„å¾ˆå¤æ‚ ä¸å»ºè®®ä½¿ç”¨è¿™ç§æ–¹å¼
 */
 
 void array_free(Array *a)
-// »ØÊÕÊı×é¿Õ¼ä 
+// å›æ”¶æ•°ç»„ç©ºé—´ 
 {
 	free(a->array);
 	a->array = NULL;
 	a->size = 0; 
 } 
 
-int  array_size(const Array *a)//·â×° 
-// ÓĞ¶àÉÙµ¥Ôª¿ÉÒÔÓÃ 
+int  array_size(const Array *a)//å°è£… 
+// æœ‰å¤šå°‘å•å…ƒå¯ä»¥ç”¨ 
 {
 	return a->size;
 }
 
 int* array_at(Array *a,int index)
-// ·ÃÎÊÄ³¸öµ¥Ôª 
+// è®¿é—®æŸä¸ªå•å…ƒ 
 {
 	if(index >= a->size )
 	{
 		array_inflate(a,(index/BLOCK_SIZE+1)*BLOCK_SIZE - a->size);
-		//index/BLOCK_SIZE Ëã³öÎ»ÓÚÄÄ¸öBLOCKÀïÃæ  
-		//£¨102/20+1£©*20 - 100 = 20
-		//ÕÇ20¸ö 
+		//index/BLOCK_SIZE ç®—å‡ºä½äºå“ªä¸ªBLOCKé‡Œé¢  
+		//ï¼ˆ102/20+1ï¼‰*20 - 100 = 20
+		//æ¶¨20ä¸ª 
 	}
 	return &(a->array[index]); 
 }
@@ -63,18 +63,18 @@ void array_inflate(Array *a,int more_size)
 	{
 		p[i] = a->array[i];
 	}
-	//memcpy´úÌæÑ­»· 
+	//memcpyä»£æ›¿å¾ªç¯ 
 	free(a->array);
 	a->array = p;
 	a->size += more_size;
 }
-// ÈÃÊı×é³¤´ó (ºËĞÄ)
+// è®©æ•°ç»„é•¿å¤§ (æ ¸å¿ƒ)
 
 int main(int argc,char const *argv[])
 {
 	Array a = array_create(100);
-	//printf("%d\n",a.size);//¸Ä½øÊ±ºÜÂé·³ 
-	printf("%d\n",array_size(&a));//·â×° 
+	//printf("%d\n",a.size);//æ”¹è¿›æ—¶å¾ˆéº»çƒ¦ 
+	printf("%d\n",array_size(&a));//å°è£… 
 	*array_at(&a,0) = 10;
 	printf("%d\n",*array_at(&a,0));
 	int number;

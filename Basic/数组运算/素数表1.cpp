@@ -27,7 +27,7 @@ int main(void)
 		}
 		i++;
 	}
-	//构造素数表
+	//鏋勯�犵礌鏁拌〃
 	for(i=0;i<number;i++)
 	{
 		printf("%d",prime[i]);

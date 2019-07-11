@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define N 10
-//´òÓ¡·ÖÊı 
+//æ‰“å°åˆ†æ•° 
 void printScore(int score[])
 {
 	int i;
@@ -11,7 +11,7 @@ void printScore(int score[])
 	}
 	printf("\n");     
 }
-//¼ÆËã¿¼ÊÔ×Ü·Ö 
+//è®¡ç®—è€ƒè¯•æ€»åˆ† 
 int getTotalScore(int score[])
 {
 	int sum = 0;
@@ -22,12 +22,12 @@ int getTotalScore(int score[])
 	} 
 	return sum;
 }
-//¼ÆËãÆ½¾ù·Ö 
+//è®¡ç®—å¹³å‡åˆ† 
 int getAvgScore(int score[])
 {
 	return getTotalScore(score)/N;   
 }
-//¼ÆËã×î¸ß·Ö 
+//è®¡ç®—æœ€é«˜åˆ† 
 int getMax(int score[])
 {
 	int max = -1;
@@ -41,7 +41,7 @@ int getMax(int score[])
 	} 
 	return max;
 }
-//¼ÆËã×îµÍ·Ö 
+//è®¡ç®—æœ€ä½åˆ† 
 int getMin(int score[])
 {
 	int min =100;
@@ -55,7 +55,7 @@ int getMin(int score[])
 	} 
 	return min;
 }
-//·ÖÊı½µĞòÅÅĞò 
+//åˆ†æ•°é™åºæ’åº 
 void sort(int score[])
 {
 	int i,j;
@@ -84,11 +84,11 @@ int main()
 	avg = getAvgScore(score);
 	max = getMax(score);
 	min = getMin(score);
-	printf("×Ü·ÖÊÇ£º%d\n",sum);
-	printf("Æ½¾ù·ÖÊÇ£º%d\n",avg);
-	printf("×î¸ß·ÖÊÇ£º%d\n",max);
-	printf("×îµÍ·ÖÊÇ£º%d\n",min);
-	printf("----------³É¼¨ÅÅÃû---------\n");
+	printf("æ€»åˆ†æ˜¯ï¼š%d\n",sum);
+	printf("å¹³å‡åˆ†æ˜¯ï¼š%d\n",avg);
+	printf("æœ€é«˜åˆ†æ˜¯ï¼š%d\n",max);
+	printf("æœ€ä½åˆ†æ˜¯ï¼š%d\n",min);
+	printf("----------æˆç»©æ’å---------\n");
 	sort(score);
 	return 0;    
 }

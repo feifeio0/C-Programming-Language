@@ -13,9 +13,9 @@ int main(void)
 	{
 		for(j=0;j<2;j++)
 		{
-			printf("green1Êý×é%dÐÐ%dÁÐÔªËØµÄÖµÎª%d\n",i,j,green1[i][j]);
-			printf("green2Êý×é%dÐÐ%dÁÐÔªËØµÄÖµÎª%d\n",i,j,green2[i][j]);
-			printf("green3Êý×é%dÐÐ%dÁÐÔªËØµÄÖµÎª%d\n",i,j,green3[i][j]);
+			printf("green1æ•°ç»„%dè¡Œ%dåˆ—å…ƒç´ çš„å€¼ä¸º%d\n",i,j,green1[i][j]);
+			printf("green2æ•°ç»„%dè¡Œ%dåˆ—å…ƒç´ çš„å€¼ä¸º%d\n",i,j,green2[i][j]);
+			printf("green3æ•°ç»„%dè¡Œ%dåˆ—å…ƒç´ çš„å€¼ä¸º%d\n",i,j,green3[i][j]);
 		}
 	}
 	return 0;

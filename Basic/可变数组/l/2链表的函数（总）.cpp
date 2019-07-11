@@ -4,7 +4,7 @@
 #include <stdlib.h>
 //typedef struct _node{
 //	int value;
-//	struct _node *next;//½Úµã 
+//	struct _node *next;//èŠ‚ç‚¹ 
 //}Node; 
 
 typedef struct _list{
@@ -34,15 +34,15 @@ int main(int argc,char const *argv[])
 
 //1.Node* add(Node* head,int number)
 //2.Node* add(Node** pHead,int number)
-//3.È«¾Ö±äÁ¿head 
+//3.å…¨å±€å˜é‡head 
 void add(List* pList,int number)
 {
 	// add to linked-list 
 		Node *p =(Node*)malloc(sizeof(Node));
-			//ÖÆ×÷struct _nodeµÄ½á¹¹Ìå,¿É±äµÄ 
+			//åˆ¶ä½œstruct _nodeçš„ç»“æž„ä½“,å¯å˜çš„ 
 		p->value = number;
 		p->next = NULL;
-		//find the last(±éÀú)£¨ÓÃtail´úÌæ£© 
+		//find the last(éåŽ†)ï¼ˆç”¨tailä»£æ›¿ï¼‰ 
 		Node *last = pList->head ;
 		if(last)
 		{

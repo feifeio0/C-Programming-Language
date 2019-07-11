@@ -1,4 +1,4 @@
-//¶¯Ì¬ÄÚ´æ·ÖÅä 
+//åŠ¨æ€å†…å­˜åˆ†é… 
 #include<stdio.h>
 #include<stdlib.h>
 //void* malloc(size_t size); 
@@ -7,11 +7,11 @@ int main()
 	int number;
 	int *a;
 	int i;
-	printf("ÊäÈëÊıÁ¿£º");
+	printf("è¾“å…¥æ•°é‡ï¼š");
 	scanf("%d",&number);
 	//int a[number];
 	a = (int*)malloc(number*sizeof(int));
-	//Ê¹ÓÃ·½·¨ 
+	//ä½¿ç”¨æ–¹æ³• 
 	for(i=0;i<number;i++)
 	{
 		scanf("%d",&a[i]);

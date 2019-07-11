@@ -2,7 +2,7 @@
 
 //void minmax(int a[],int len,int *max,int *min); 
 void minmax(int *a,int len,int *max,int *min); 
-//º¯Êı²ÎÊı±íÖĞµÄÊı×éÊµ¼ÊÉÏÊÇÖ¸Õë 
+//å‡½æ•°å‚æ•°è¡¨ä¸­çš„æ•°ç»„å®é™…ä¸Šæ˜¯æŒ‡é’ˆ 
 int main(void)
 {
 	int a[] = {1,2,3,4,5,6,7,8,9,12,13,14,16,17,21,23,55,};
@@ -24,7 +24,7 @@ void minmax(int *a,int len,int *min,int *max)
 	int i;
 	 
 	printf("minmax sizeof(a)=%lu\n",sizeof(a));
-	//64Î»¼Ü¹¹×Ö½ÚÊÇ8  62fe00 
+	//64ä½æ¶æ„å­—èŠ‚æ˜¯8  62fe00 
 	printf("minmax a=%p\n",a);
 	
 	*min = *max = a[0];

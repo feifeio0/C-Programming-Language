@@ -1,4 +1,4 @@
-//ºÏÊÊÊ±»úÊÍ·ÅÄÚ´æ 
+//åˆé€‚æ—¶æœºé‡Šæ”¾å†…å­˜ 
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -6,14 +6,14 @@ int main(void)
 {
 	int i;
 	void *p = 0;
-	//ºÃÏ°¹ß¶¨ÒåÎª0 
+	//å¥½ä¹ æƒ¯å®šä¹‰ä¸º0 
 	int cnt = 0;
 	//p=malloc(100*1024*1024);
 	//p++;
 	p = &i;
 	free(p);
-	//ÉêÇëÁËÃ»free£¬³¤Ê±¼äÔËÐÐÄÚ´æÖð½¥ÏÂ½µ 
-	//ÐÂÊÖ£ºÍüÁË   ÀÏÊÖ£ºÕÒ²»µ½ºÏÊÊµÄÊ±»ú
-	//free¹ýºóÔÙfree»á±ÀÀ£ 
+	//ç”³è¯·äº†æ²¡freeï¼Œé•¿æ—¶é—´è¿è¡Œå†…å­˜é€æ¸ä¸‹é™ 
+	//æ–°æ‰‹ï¼šå¿˜äº†   è€æ‰‹ï¼šæ‰¾ä¸åˆ°åˆé€‚çš„æ—¶æœº
+	//freeè¿‡åŽå†freeä¼šå´©æºƒ 
 	return 0; 
  }

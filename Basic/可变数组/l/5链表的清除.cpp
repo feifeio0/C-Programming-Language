@@ -4,18 +4,18 @@
 #include <stdlib.h>
 //typedef struct _node{
 //	int value;
-//	struct _node *next;//½Úµã 
+//	struct _node *next;//èŠ‚ç‚¹ 
 //}Node; 
 
 typedef struct _list{
 	Node* head;
 }List;
 
-void add(List* pList,int number);//¼Óµã¶«Î÷ 
-void print(List *pList);//Êä³öÁ´±í 
-void find (List *pList);//²éÕÒ 
-void delete_(List *pList);//É¾³ý 
-void dump(List *pList) ;//Çå³ý 
+void add(List* pList,int number);//åŠ ç‚¹ä¸œè¥¿ 
+void print(List *pList);//è¾“å‡ºé“¾è¡¨ 
+void find (List *pList);//æŸ¥æ‰¾ 
+void delete_(List *pList);//åˆ é™¤ 
+void dump(List *pList) ;//æ¸…é™¤ 
 int main(int argc,char const *argv[])
 {
 	List list;
@@ -32,7 +32,7 @@ int main(int argc,char const *argv[])
 	print(&list);
 	find(&list) ;
 	delete_(&list);
-	//Ä©Î²½Úµã ÉÚ±ø½Úµã Ë«ÏòÁÐ±í 
+	//æœ«å°¾èŠ‚ç‚¹ å“¨å…µèŠ‚ç‚¹ åŒå‘åˆ—è¡¨ 
 	return 0;
 }
 
@@ -77,14 +77,14 @@ void find (List *pList)
 	{
 		if( p->value == number_)
 		{
-			printf("ÕÒµ½ÁË\n");
+			printf("æ‰¾åˆ°äº†\n");
 			isFound = 1;
 			break;
 		}
 	}
 	if(isFound)
 	{
-		printf("Ã»ÕÒµ½\n");
+		printf("æ²¡æ‰¾åˆ°\n");
 	}
 }
 void  delete_(List *pList)
@@ -101,7 +101,7 @@ void  delete_(List *pList)
 			{
 				q->next = p->next;
 			}
-			//ÄÄ¸öÖ¸ÕëÔÚ×ó±ßÃ»ÓÐ±£Ö¤°²È«¡£ 
+			//å“ªä¸ªæŒ‡é’ˆåœ¨å·¦è¾¹æ²¡æœ‰ä¿è¯å®‰å…¨ã€‚ 
 			else
 			{
 				pList->head = p->next;

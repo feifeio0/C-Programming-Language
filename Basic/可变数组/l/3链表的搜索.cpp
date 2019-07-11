@@ -4,16 +4,16 @@
 #include <stdlib.h>
 //typedef struct _node{
 //	int value;
-//	struct _node *next;//节点 
+//	struct _node *next;//鑺傜偣 
 //}Node; 
 
 typedef struct _list{
 	Node* head;
 }List;
 
-void add(List* pList,int number);//加点东西 
-void print(List *pList);//输出链表 
-void find (List *pList);//查找 
+void add(List* pList,int number);//鍔犵偣涓滆タ 
+void print(List *pList);//杈撳嚭閾捐〃 
+void find (List *pList);//鏌ユ壘 
 int main(int argc,char const *argv[])
 {
 	List list;
@@ -74,13 +74,13 @@ void find (List *pList)
 	{
 		if( p->value == number_)
 		{
-			printf("找到了\n");
+			printf("鎵惧埌浜哱n");
 			isFound = 1;
 			break; 
 		}
 	}
 	if(isFound)
 	{
-		printf("没找到\n");
+		printf("娌℃壘鍒癨n");
 	}
 }

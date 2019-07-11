@@ -16,7 +16,7 @@ int main(void)
 void minmax(int *a,int len,int *min,int *max)
 {
 	int i ;
-	/*printf("minmax sizeof(a)=%lu\n",sizeof(a)); 返回的是int*的sizeof=4 */ 
+	/*printf("minmax sizeof(a)=%lu\n",sizeof(a)); 杩斿洖鐨勬槸int*鐨剆izeof=4 */ 
 	*min = *max = a[0];
 	for(i=1;i<len;i++)
 	{

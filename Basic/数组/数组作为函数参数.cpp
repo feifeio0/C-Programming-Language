@@ -15,14 +15,14 @@ void replaceMax(int arr[],int shu)
 	}
 	arr[index] = shu;
 }
-// indexÊÇË÷ÒıµÄÒâË¼  Ä¿µÄÊÇ¼ÇÂ¼µÚ¼¸¸öÊı 
+// indexæ˜¯ç´¢å¼•çš„æ„æ€  ç›®çš„æ˜¯è®°å½•ç¬¬å‡ ä¸ªæ•° 
 int main(void)
 {
 	int arr1[] = {10,41,3,12,22};
 	int arr2[] = {1,2,3,4,5} ;
 	int i ;
 	replaceMax(arr1,arr2[1]);
-	//ÒªÇó¶¨ÒåÒ»¸öreplaceMaxº¯Êı Ê¹arr1ÖĞ×î´óµÄÔªËØÌæ»»
+	//è¦æ±‚å®šä¹‰ä¸€ä¸ªreplaceMaxå‡½æ•° ä½¿arr1ä¸­æœ€å¤§çš„å…ƒç´ æ›¿æ¢
 	for(i=0;i<5;i++)
 	{
 		printf("%d\n",arr1[i]);

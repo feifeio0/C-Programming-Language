@@ -1,6 +1,6 @@
 #include<stdio.h>
 int search(int key,int a[],int length)
-//数组作为参数时不能在[]中写数组的大小也不能利用sizeof计算元素个数 
+//鏁扮粍浣滀负鍙傛暟鏃朵笉鑳藉湪[]涓啓鏁扮粍鐨勫ぇ灏忎篃涓嶈兘鍒╃敤sizeof璁＄畻鍏冪礌涓暟 
 {
 	int ret = -1;
 	int i;
@@ -19,16 +19,16 @@ int main(void)
 	int a[] = {2,4,6,7,1,3,5,9,11,13,23,14,32};
 	int x;
 	int loc;
-	printf("请输入一个数字：");
+	printf("璇疯緭鍏ヤ竴涓暟瀛楋細");
 	scanf("%d",&x);
 	loc = search(x,a,sizeof(a)/sizeof(a[0]));
 	if(loc != -1)
 	{
-		printf("%d在第%d个位置上\n",x,loc);
+		printf("%d鍦ㄧ%d涓綅缃笂\n",x,loc);
 	}
 	else
 	{
-		printf("%d不存在\n",x);
+		printf("%d涓嶅瓨鍦╘n",x);
 	}
 	
 	return 0;

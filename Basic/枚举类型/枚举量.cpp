@@ -1,5 +1,5 @@
-//定义排比的名字，用枚举比const int方便
-//枚举比宏（macro）好，因为枚举有int类型 
+//瀹氫箟鎺掓瘮鐨勫悕瀛楋紝鐢ㄦ灇涓炬瘮const int鏂逛究
+//鏋氫妇姣斿畯锛坢acro锛夊ソ锛屽洜涓烘灇涓炬湁int绫诲瀷 
 #include<stdio.h>
 
 enum COLOR {RED=1,YELLOW,GREEN=5,NumCOLORS};

@@ -1,16 +1,16 @@
-//×Ô¶¯¼ÆÊýµÄÃ¶¾Ù (Ð¡Ì×Â·) 
-//±éÀúËùÓÐµÄÃ¶¾ÙÁ¿
-//½¨Á¢Ò»¸öÓÃÃ¶¾ÙÁ¿×÷ÏÂ±êµÄÊý×é 
+//è‡ªåŠ¨è®¡æ•°çš„æžšä¸¾ (å°å¥—è·¯) 
+//éåŽ†æ‰€æœ‰çš„æžšä¸¾é‡
+//å»ºç«‹ä¸€ä¸ªç”¨æžšä¸¾é‡ä½œä¸‹æ ‡çš„æ•°ç»„ 
 #include<stdio.h>
 enum COLOR {RED,YELLOW,GREEN,NumCOLORS};
-//×îºó·ÅÒ»¸önumof... 
+//æœ€åŽæ”¾ä¸€ä¸ªnumof... 
 int main(int argc,char const *argv[])
 {
 	int color = -1;
 	char *ColorNames[NumCOLORS] = {"red","yellow","green",};
 	char *colorName = NULL;
 	
-	printf("ÊäÈëÄãÏ²»¶µÄÑÕÉ«µÄ´úÂë£º");
+	printf("è¾“å…¥ä½ å–œæ¬¢çš„é¢œè‰²çš„ä»£ç ï¼š");
 	scanf("%d",&color);
 	if(color>=0&&color<NumCOLORS)
 	{
@@ -20,7 +20,7 @@ int main(int argc,char const *argv[])
 	{
 		colorName = "unknown";
 	}
-	printf("ÄãÏ²»¶µÄÑÕÉ«ÊÇ%s\n",colorName);
+	printf("ä½ å–œæ¬¢çš„é¢œè‰²æ˜¯%s\n",colorName);
 	
 	return 0;
 }

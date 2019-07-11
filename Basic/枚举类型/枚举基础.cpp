@@ -1,11 +1,11 @@
-//Ã¶¾Ù
-//Ã¶¾ÙÊÇÒ»ÖÖÓÃ»§¶¨ÒåµÄÊı¾İÀàĞÍ£¬ÓÃenum
-//enum Ã¶¾ÙÀàĞÍÃû×Ö{Ãû×Ö0£¬....£¬Ãû×Ön}
-//ËûÃÇÊÇ³£Á¿·ûºÅ£¬ÀàĞÍÊÇint£¬ÖµÊÇ´Ó0µ½n 
+//æšä¸¾
+//æšä¸¾æ˜¯ä¸€ç§ç”¨æˆ·å®šä¹‰çš„æ•°æ®ç±»å‹ï¼Œç”¨enum
+//enum æšä¸¾ç±»å‹åå­—{åå­—0ï¼Œ....ï¼Œåå­—n}
+//ä»–ä»¬æ˜¯å¸¸é‡ç¬¦å·ï¼Œç±»å‹æ˜¯intï¼Œå€¼æ˜¯ä»0åˆ°n 
 #include<stdio.h>
 
 enum COLOR {RED,YELLOW,GREEN}; 
-//´´½¨ÁËÈı¸ö³£Á¿ £¬red 0 £¬yellow 1£¬green 2 
+//åˆ›å»ºäº†ä¸‰ä¸ªå¸¸é‡ ï¼Œred 0 ï¼Œyellow 1ï¼Œgreen 2 
 //const int red = 0;
 //const int yellow = 1;
 //const int green = 2; 
@@ -14,7 +14,7 @@ int main(int argc,char const *argv[])
 	int color = -1;
 	char *colorName = NULL;
 	
-	printf("ÊäÈëÄãÏ²»¶µÄÑÕÉ«µÄ´úÂë£º");
+	printf("è¾“å…¥ä½ å–œæ¬¢çš„é¢œè‰²çš„ä»£ç ï¼š");
 	scanf("%d",&color);
 	switch(color)
 	{
@@ -23,7 +23,7 @@ int main(int argc,char const *argv[])
 		case GREEN:colorName = "green";break;
 		default:colorName = "unknown";break;
 	}
-	printf("ÄãÏ²»¶µÄÑÕÉ«ÊÇ%s\n",colorName);
+	printf("ä½ å–œæ¬¢çš„é¢œè‰²æ˜¯%s\n",colorName);
 	
 	return 0;
 }

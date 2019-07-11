@@ -1,10 +1,10 @@
-//ÔÚÁ´±íÖĞÌí¼ÓĞÂµÄÄÚÈİ 
+//åœ¨é“¾è¡¨ä¸­æ·»åŠ æ–°çš„å†…å®¹ 
 #include "node.h"
 #include <stdio.h>
 #include <stdlib.h>
 //typedef struct _node{
 //	int value;
-//	struct _node *next;//½Úµã 
+//	struct _node *next;//èŠ‚ç‚¹ 
 //}Node; 
 
 int main(int argc,char const *argv[])
@@ -19,10 +19,10 @@ int main(int argc,char const *argv[])
 		{
 			// add to linked-list 
 			Node *p =(Node*)malloc(sizeof(Node));
-				//ÖÆ×÷struct _nodeµÄ½á¹¹Ìå,¿É±äµÄ 
+				//åˆ¶ä½œstruct _nodeçš„ç»“æ„ä½“,å¯å˜çš„ 
 			p->value = number;
 			p->next = NULL;
-			//find the last(±éÀú)
+			//find the last(éå†)
 			Node *last = head;
 			if(last)
 			{

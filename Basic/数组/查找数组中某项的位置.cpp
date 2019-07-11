@@ -21,11 +21,11 @@ int main()
 	int index = getindex(arr,shu);
 	if(index!=-1)
 	{
-		printf("%d在数组中存在，下标为%d\n",shu,index);
+		printf("%d鍦ㄦ暟缁勪腑瀛樺湪锛屼笅鏍囦负%d\n",shu,index);
 	}
 	else
 	{
-		printf("%d在数组中不存在\n",shu);
+		printf("%d鍦ㄦ暟缁勪腑涓嶅瓨鍦╘n",shu);
 	}
 	return 0;
 }

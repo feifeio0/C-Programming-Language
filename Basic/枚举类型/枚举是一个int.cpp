@@ -1,8 +1,8 @@
-//ÊäÈë³£Á¿·ûºÅ Êä³öÖµ 
+//è¾“å…¥å¸¸é‡ç¬¦å· è¾“å‡ºå€¼ 
 #include<stdio.h>
 
 enum color{red,yellow,green};
-//ÉùÃ÷Ò»ÖÖÊı¾İÀàĞÍ Ãû×Ö½Ğenum 
+//å£°æ˜ä¸€ç§æ•°æ®ç±»å‹ åå­—å«enum 
 void f(enum color c);
 
 int main(void)

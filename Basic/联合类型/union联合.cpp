@@ -1,5 +1,5 @@
 #include<stdio.h>
-//x86CPUµÍÎ»ÔÚÇ° 
+//x86CPUä½ä½åœ¨å‰ 
 typedef union{
 	int i;
 	char ch[sizeof(int)];
@@ -13,7 +13,7 @@ int main(int argc,char const *argv[])
 	for(i=0;i<sizeof(int);i++)
 	{
 		printf("%02hhX",chi.ch[i]);
-		//ĞŞÊÎ·û 16½øÖÆÖ»ÓĞÒ»¸ö×Ö½ÚÏÔÊ¾16½øÖÆ²¹0 
+		//ä¿®é¥°ç¬¦ 16è¿›åˆ¶åªæœ‰ä¸€ä¸ªå­—èŠ‚æ˜¾ç¤º16è¿›åˆ¶è¡¥0 
 	}
 	printf("\n");
 	

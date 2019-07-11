@@ -1,4 +1,4 @@
-//É¢ÁĞ±í cache 
+//æ•£åˆ—è¡¨ cache 
 
 
 #include<stdio.h>
@@ -8,7 +8,7 @@ struct
 {
 	int amount;
 	const char *name;
-	//¸øÎÒÒ»¸ö×Ö·û´®ÎÒÖ»Òª¶ÁÈ¡Ëü 
+	//ç»™æˆ‘ä¸€ä¸ªå­—ç¬¦ä¸²æˆ‘åªè¦è¯»å–å®ƒ 
 } coins[] = {{1,"penny"},{5,"nickel"},{10,"dime"},{25,"quarter"},{50,"half"}};
 int search(int key,int a[],int len)
 {

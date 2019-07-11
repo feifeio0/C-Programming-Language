@@ -2,24 +2,24 @@
 #include<string.h>
 int main(void)
 {
-	char green[] = "¸»Ìì";
+	char green[] = "å¯Œå¤©";
 	char greening[] = {'G','R','E','E','N','\0'};
-	//µÚ¶şÖÖ¶¨ÒåÊı×éµÄ·½Ê½²»ÄÜÓĞÖĞÎÄ£¬×îºóÒ»¸öÔªËØ±ØĞëÊÇ'\0'¡£ 
+	//ç¬¬äºŒç§å®šä¹‰æ•°ç»„çš„æ–¹å¼ä¸èƒ½æœ‰ä¸­æ–‡ï¼Œæœ€åä¸€ä¸ªå…ƒç´ å¿…é¡»æ˜¯'\0'ã€‚ 
 	printf("%s\n",green);
 	printf("%s\n",greening);
-	//Êä³öÊı×éÊ± ÒªÊ¹ÓÃ %s  
+	//è¾“å‡ºæ•°ç»„æ—¶ è¦ä½¿ç”¨ %s  
 	puts(green); 
-	//Ò²¿ÉÒÔÊ¹ÓÃputsÀ´Êä³ö×Ö·û´® 
-	printf("×Ö·û´®green³¤¶ÈÎª%d\n",strlen(green));
-	printf("×Ö·û´®greening³¤¶ÈÎª%d\n",strlen(greening));
-	//strlen()»ñÈ¡×Ö·û´®µÄ³¤¶ÈÇÒ²»°üº¬\0,ËùÒÔºÍºº×ÖºÍ×ÖÄ¸³¤¶È²»Í¬
+	//ä¹Ÿå¯ä»¥ä½¿ç”¨putsæ¥è¾“å‡ºå­—ç¬¦ä¸² 
+	printf("å­—ç¬¦ä¸²greené•¿åº¦ä¸º%d\n",strlen(green));
+	printf("å­—ç¬¦ä¸²greeningé•¿åº¦ä¸º%d\n",strlen(greening));
+	//strlen()è·å–å­—ç¬¦ä¸²çš„é•¿åº¦ä¸”ä¸åŒ…å«\0,æ‰€ä»¥å’Œæ±‰å­—å’Œå­—æ¯é•¿åº¦ä¸åŒ
 	char futianlv[] = "";
 	strcpy(futianlv,green);
 	printf("%s\n",futianlv); 
-	//strcpy ÊÇ°ÑºóÃæµÄ×Ö·û´®¸²¸ÇÔÚÇ°ÃæµÄ×Ö·û´®ÖĞ 
-	char greens[] = "ÂÌÍõ"; 
+	//strcpy æ˜¯æŠŠåé¢çš„å­—ç¬¦ä¸²è¦†ç›–åœ¨å‰é¢çš„å­—ç¬¦ä¸²ä¸­ 
+	char greens[] = "ç»¿ç‹"; 
 	strcat(futianlv,greens); 
 	printf("%s\n",futianlv); 
-	//strcat ÊÇ°ÑºóÃæµÄ×Ö·û´®Æ´½ÓÔÚÇ°ÃæµÄ×Ö·û´®µÄºóÃæ 
+	//strcat æ˜¯æŠŠåé¢çš„å­—ç¬¦ä¸²æ‹¼æ¥åœ¨å‰é¢çš„å­—ç¬¦ä¸²çš„åé¢ 
 	return 0; 
 }

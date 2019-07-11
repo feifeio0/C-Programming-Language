@@ -1,5 +1,5 @@
 
-//ÏßĞÔËÑË÷ ±éÀúºóÕÒµ½Î»ÖÃÊä³ö 
+//çº¿æ€§æœç´¢ éå†åæ‰¾åˆ°ä½ç½®è¾“å‡º 
 
 
 #include<stdio.h> 
@@ -15,7 +15,7 @@ int search(int key,int a[],int len)
 			break;
 		}
 	}
-//	return -1; Î¥±³ÁËµ¥Ò»³ö¿Ú 
+//	return -1; è¿èƒŒäº†å•ä¸€å‡ºå£ 
 	return ret;
  } 
 int main(void)

@@ -10,6 +10,6 @@ int main(void)
 	{
 		cnt++;
 	}
-	printf("·ÖÅäÁË%d00MBµÄ¿Õ¼ä\n",cnt);
+	printf("åˆ†é…äº†%d00MBçš„ç©ºé—´\n",cnt);
 	return 0; 
  } 

@@ -1,16 +1,16 @@
-//Ñ°ÕÒÒ»¸ö·½ÐÎ¾ØÕóµÄ°°µã£¨saddle point£©  
+//å¯»æ‰¾ä¸€ä¸ªæ–¹å½¢çŸ©é˜µçš„éžç‚¹ï¼ˆsaddle pointï¼‰  
 #include <stdio.h>  
   
 int main(){  
-    //¶ÁÈëÒ»¸öÊý×Ö£¬¾ö¶¨Õâ¸ö·½ÐÎ¾ØÕóÊÇ¼¸½×µÄ  
+    //è¯»å…¥ä¸€ä¸ªæ•°å­—ï¼Œå†³å®šè¿™ä¸ªæ–¹å½¢çŸ©é˜µæ˜¯å‡ é˜¶çš„  
     int n;  
     scanf("%d",&n);  
   
-    //¶¨Òån½×¾ØÕóÒÔ¼°½«ÒªÓÃµ½µÄ±äÁ¿  
+    //å®šä¹‰né˜¶çŸ©é˜µä»¥åŠå°†è¦ç”¨åˆ°çš„å˜é‡  
     int matrix[n][n];  
     int i,j,temp,count,flag=0;  
   
-    //¶ÁÈë¾ØÕóÖÐµÄÃ¿Ò»¸öÊý  
+    //è¯»å…¥çŸ©é˜µä¸­çš„æ¯ä¸€ä¸ªæ•°  
     for(i=0; i<n; i++){  
         for(j=0; j<n; j++){  
             scanf("%d",&temp);  
@@ -18,7 +18,7 @@ int main(){
         }  
     }  
   
-    //²âÊÔ¶ÁÈëµÄÊý¾ÝÊÇ·ñÕýÈ·  
+    //æµ‹è¯•è¯»å…¥çš„æ•°æ®æ˜¯å¦æ­£ç¡®  
 /*  {  
         for(i=0; i<n; i++){  
             printf("%d\t",i);  
@@ -29,10 +29,10 @@ int main(){
         }  
     }  
 */  
-    //¿ªÊ¼Ñ°ÕÒ°°µã  
+    //å¼€å§‹å¯»æ‰¾éžç‚¹  
     for(i=0; i<n; i++){    
-        //ÕÒ³öÃ¿ÐÐÖÐµÄ×î´óµÄÊý×Ö  
-        temp=matrix[i][0];  //ÓÃtempÓëcount±êÊ¶³öÃ¿ÐÐÖÐ×î´óµÄÊý×ÖÒÔ¼°Î»ÖÃ  
+        //æ‰¾å‡ºæ¯è¡Œä¸­çš„æœ€å¤§çš„æ•°å­—  
+        temp=matrix[i][0];  //ç”¨tempä¸Žcountæ ‡è¯†å‡ºæ¯è¡Œä¸­æœ€å¤§çš„æ•°å­—ä»¥åŠä½ç½®  
         count=0;  
         for(j=1; j<n; j++){  
             if(temp<matrix[i][j]){     
@@ -40,19 +40,19 @@ int main(){
                 count=j;  
             }  
         }  
-        //²âÊÔÒ»ÏÂ£¬´ËÐÐ×î´óµÄÊý×Ö£¬ÊÇ·ñÊÇÆäËùÔÚÁÐµÄ×îÐ¡Êý×Ö  
+        //æµ‹è¯•ä¸€ä¸‹ï¼Œæ­¤è¡Œæœ€å¤§çš„æ•°å­—ï¼Œæ˜¯å¦æ˜¯å…¶æ‰€åœ¨åˆ—çš„æœ€å°æ•°å­—  
         for(j=0;j<n;j++){  
             if(matrix[j][count]<temp){  
-                flag++; //Èç¹ûÓÐÊý×ÖÐ¡temp£¬flag¾Í²»ÎªÁã  
+                flag++; //å¦‚æžœæœ‰æ•°å­—å°tempï¼Œflagå°±ä¸ä¸ºé›¶  
             }  
         }  
-        if(flag==0){    //²âÊÔflagÖµ£¬Èç¹ûÎªÁã£¬Ö¤Ã÷´ËÊýÕýÊÇÒªÕÒµÄ°°µã  
+        if(flag==0){    //æµ‹è¯•flagå€¼ï¼Œå¦‚æžœä¸ºé›¶ï¼Œè¯æ˜Žæ­¤æ•°æ­£æ˜¯è¦æ‰¾çš„éžç‚¹  
             printf("%d %d\n",i,count);  
             break;  
         }  
         flag=0;  
     }  
-    //Èç¹ûÃ»ÕÒµ½°°Êý£¬Ñ­»·ÖÕÖ¹£¬Êä³ö¡°NO¡±  
+    //å¦‚æžœæ²¡æ‰¾åˆ°éžæ•°ï¼Œå¾ªçŽ¯ç»ˆæ­¢ï¼Œè¾“å‡ºâ€œNOâ€  
     if(i==n){  
         printf("NO");  
     }  

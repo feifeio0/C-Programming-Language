@@ -8,20 +8,20 @@ int main(void)
 	{
 		printf("%d\n",ac[i]);
 	}*/ 
-	//for(p=ac;*p£¡=-1;p++) 
+	//for(p=ac;*pï¼=-1;p++) 
 	while(*p!=-1)
 	{
 		printf("%d\n",*p++);
 	}
 	
-	//*p++  ÖÐ*µÄÓÅÏÈ¼¶Ã»ÓÐ++¸ß 
-	//¾­³£ÓÃÓÚÊý×éÀàµÄÁ¬Ðø¿Õ¼ä²Ù×÷ 
+	//*p++  ä¸­*çš„ä¼˜å…ˆçº§æ²¡æœ‰++é«˜ 
+	//ç»å¸¸ç”¨äºŽæ•°ç»„ç±»çš„è¿žç»­ç©ºé—´æ“ä½œ 
 	int ai[] = {0,1,2,3,4,5,6,7,8,9,};
 	int *q = ai;
-	//NULLÊÇ0µØÖ·
-	//Ö¸ÕëÀàÐÍ²»Æ¥ÅäÊÇ²»ÄÜ»¥Ïà¸³ÖµµÄ 
-	//Ç¿ÖÆÀàÐÍ×ª»»ÊÇ¿ÉÒÔµÄ£¨³õÑ§²»±ØÒª£© 
-	//int *p = &i;void *q = (void*)p; £¨ÏµÍ³³ÌÐò£©
-	//Í¨¹ýq¿´iÊÇvoid Í¨¹ýp¿´iÊÇint 
+	//NULLæ˜¯0åœ°å€
+	//æŒ‡é’ˆç±»åž‹ä¸åŒ¹é…æ˜¯ä¸èƒ½äº’ç›¸èµ‹å€¼çš„ 
+	//å¼ºåˆ¶ç±»åž‹è½¬æ¢æ˜¯å¯ä»¥çš„ï¼ˆåˆå­¦ä¸å¿…è¦ï¼‰ 
+	//int *p = &i;void *q = (void*)p; ï¼ˆç³»ç»Ÿç¨‹åºï¼‰
+	//é€šè¿‡qçœ‹iæ˜¯void é€šè¿‡pçœ‹iæ˜¯int 
 	return 0;
  } 

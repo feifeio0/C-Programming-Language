@@ -17,7 +17,7 @@ int main(void)
  
  void minmax(int a[],int len,int *min,int *max)
  
- //º¯ÊıÖĞÊı×éÆäÊµ¾ÍÊÇÖ¸Õë (ÎªÊ²Ã´±ØĞëÊÇ¿Õ·½À¨ºÅ£¿)
+ //å‡½æ•°ä¸­æ•°ç»„å…¶å®å°±æ˜¯æŒ‡é’ˆ (ä¸ºä»€ä¹ˆå¿…é¡»æ˜¯ç©ºæ–¹æ‹¬å·ï¼Ÿ)
  /* int sum(int *ar,int n)
     int sum(int *,int)
 	int sum(int ar[],int n)
